@@ -15,5 +15,5 @@ We have not modified OpenFEC library and it can be downloaded and installed form
 To run server:
   - $ ./qtlsserver --htdocs=ngtcp2/examples/server-root -q --cc=bbr --max-udp-payload-size=1400  '*' 4444 ../ci/cert/server.key ../ci/cert/server.crt
 
-To run client for the 3rd multiple resources scenario:
+To run client for the 3rd multiple resources scenario if the server IP is 192.168.1.1:
   - $ ./qtlsclient -q --cc=bbr --max-udp-payload-size=1400 192.168.1.1 4444 https://192.168.1.1:4444/100kb?u=0 https://192.168.1.1:4444/100kb?u=0 https://192.168.1.1:4444/100kb?u=0 https://192.168.1.1:4444/100kb?u=0 https://192.168.1.1:4444/100kb?u=0 https://192.168.1.1:4444/100kb?u=4 https://192.168.1.1:4444/100kb?u=4 https://192.168.1.1:4444/100kb?u=0 https://192.168.1.1:4444/100kb?u=0 https://192.168.1.1:4444/100kb?u=0 https://192.168.1.1:4444/100kb?u=0
