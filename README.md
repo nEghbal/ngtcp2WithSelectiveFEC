@@ -2,13 +2,15 @@
 Applying FEC on selected high priority resources only. 
 
 This project needs three packages: 1) ngtcp2, 2) nghttp3, 3) OpenFEC.
-We modified ngtcp2 and nghttp3 and upload them here. Their installation process is just like the instruction on the ngtcp2 GitHub page: 
+We modified ngtcp2 and nghttp3 and upload them here. Their installation process is like the instruction on the ngtcp2 GitHub page: 
   - https://github.com/ngtcp2/ngtcp2
+  - Except the configure command of nghttp3, that must be modified like this:
+  - ./configure --prefix=$PWD/build --enable-lib-only LIBS="-L/openfec_v1.4.2/bin/Release -lopenfec" CFLAGS="-g -O2 -I/openfec_v1.4.2/src/lib_commom/"
 
 We have not modified OpenFEC library and it can be downloaded and installed form its website: 
   - http://openfec.org/
   - This export command needs to be called on both client and server nodes before any test:
-  - export LD_LIBRARY_PATH=PATH-TO-OPENFEC/openfec_v1.4.2/bin/Release
+  - export LD_LIBRARY_PATH=openfec_v1.4.2/bin/Release
 
 To run server:
 	$ ./qtlsserver --htdocs=/users/eghbal/ngtcp2/examples/server-root -q --cc=bbr --max-udp-payload-size=1400  '*' 4444 ../ci/cert/server.key ../ci/cert/server.crt
