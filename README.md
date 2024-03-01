@@ -7,6 +7,8 @@ We modified ngtcp2 and nghttp3 and upload them here. Their installation process 
 
 We have not modified OpenFEC library and it can be downloaded and installed form its website: 
   - http://openfec.org/
+  - This export command needs to be called on both client and server nodes before any test:
+  - export LD_LIBRARY_PATH=PATH-TO-OPENFEC/openfec_v1.4.2/bin/Release
 
 To run server:
 	$ ./qtlsserver --htdocs=/users/eghbal/ngtcp2/examples/server-root -q --cc=bbr --max-udp-payload-size=1400  '*' 4444 ../ci/cert/server.key ../ci/cert/server.crt
