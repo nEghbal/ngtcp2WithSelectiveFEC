@@ -2,7 +2,7 @@
 Applying FEC on selected high priority resources only. 
 
 This project needs three packages: 1) ngtcp2, 2) nghttp3, 3) OpenFEC.
-We modified ngtcp2 and nghttps and upload it here. Their installation process is just like the instruction on the ngtcp2 GitHub page: 
+We modified ngtcp2 and nghttp3 and upload them here. Their installation process is just like the instruction on the ngtcp2 GitHub page: 
   - https://github.com/ngtcp2/ngtcp2
 
 We have not modified OpenFEC library and it can be downloaded and installed form its website: 
