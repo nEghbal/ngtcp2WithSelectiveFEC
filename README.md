@@ -13,7 +13,7 @@ We have not modified OpenFEC library and it can be downloaded and installed form
   - export LD_LIBRARY_PATH=openfec_v1.4.2/bin/Release
 
 To run server:
-	- $ ./qtlsserver --htdocs=/users/eghbal/ngtcp2/examples/server-root -q --cc=bbr --max-udp-payload-size=1400  '*' 4444 ../ci/cert/server.key ../ci/cert/server.crt
+  - $ ./qtlsserver --htdocs=/users/eghbal/ngtcp2/examples/server-root -q --cc=bbr --max-udp-payload-size=1400  '*' 4444 ../ci/cert/server.key ../ci/cert/server.crt
 
 To run client for the 3rd multiple resources scenario:
-	- $ ./qtlsclient -q --cc=bbr --max-udp-payload-size=1400 192.168.1.1 4444 https://192.168.1.1:4444/100kb?u=0 https://192.168.1.1:4444/100kb?u=0 https://192.168.1.1:4444/100kb?u=0 https://192.168.1.1:4444/100kb?u=0 https://192.168.1.1:4444/100kb?u=0 https://192.168.1.1:4444/100kb?u=4 https://192.168.1.1:4444/100kb?u=4 https://192.168.1.1:4444/100kb?u=0 https://192.168.1.1:4444/100kb?u=0 https://192.168.1.1:4444/100kb?u=0 https://192.168.1.1:4444/100kb?u=0
+  - $ ./qtlsclient -q --cc=bbr --max-udp-payload-size=1400 192.168.1.1 4444 https://192.168.1.1:4444/100kb?u=0 https://192.168.1.1:4444/100kb?u=0 https://192.168.1.1:4444/100kb?u=0 https://192.168.1.1:4444/100kb?u=0 https://192.168.1.1:4444/100kb?u=0 https://192.168.1.1:4444/100kb?u=4 https://192.168.1.1:4444/100kb?u=4 https://192.168.1.1:4444/100kb?u=0 https://192.168.1.1:4444/100kb?u=0 https://192.168.1.1:4444/100kb?u=0 https://192.168.1.1:4444/100kb?u=0
