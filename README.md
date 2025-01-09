@@ -1,5 +1,5 @@
 # ngtcp2WithSelectiveFEC
-Applying FEC on selected high priority resources only. 
+Applying FEC on selected high priority resources only over ngtcp2 implementation of QUIC. 
 
 This project needs three packages: 1) ngtcp2, 2) nghttp3, 3) OpenFEC.
 We modified ngtcp2 and nghttp3 and upload them here. Their installation process is exaclty as in ngtcp2's README file.
